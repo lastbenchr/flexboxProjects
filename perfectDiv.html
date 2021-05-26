@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> A Perfect Div</title>
+	<style type="text/css">
+		*{margin: 0; padding: 0; box-sizing: border-box; }
+
+		.container{
+			width: 100%;
+			background-color: pink;
+		}
+		.box{
+			border:1px solid black;
+			padding: 20px;
+			flex-basis: 30%;
+		}
+		.one{
+			background-color: red;
+		} 
+		.two{
+			background-color: yellow;	
+		}
+		.three{
+			background-color: green;
+		}
+			
+		/*********** media query for mobile	************/	
+		
+		@media (min-width: 768px){
+			.container{
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<section class="container">
+	<div class="box one">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+	
+	<div class="box two">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+	
+	<div class="box three">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+</section>
+</body>
+</html>
